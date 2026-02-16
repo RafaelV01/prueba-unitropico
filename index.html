@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unitrópico - Ingeniería en IA</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#004D40", // Deep Teal
+              "primary-dark": "#00332a",
+              accent: "#B09A51", // Gold/Mustard
+              "accent-light": "#C5B26E",
+              "background-light": "#F9FAFB",
+              "background-dark": "#121212",
+              "surface-dark": "#1E1E1E",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+            },
+            backgroundImage: {
+                'network-light': "url('https://www.transparenttextures.com/patterns/cubes.png')", 
+                'network-dark': "url('https://www.transparenttextures.com/patterns/black-scales.png')",
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+       .hero-shape {
+         clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+       }
+      @media (max-width: 1024px) {
+          .hero-shape {
+              clip-path: none;
+          }
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #B09A51;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #004D40;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #2d2d2d;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
