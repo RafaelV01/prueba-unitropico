@@ -58,11 +58,11 @@ const Home: React.FC = () => {
             Fórmate como líder en la revolución tecnológica. Diseña, implementa y gestiona sistemas inteligentes que transformarán el futuro de la industria y la sociedad en la Orinoquia y el mundo.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-12">
-            <Link to="/curriculum" className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded shadow-lg hover:shadow-xl hover:scale-105 transition-all font-semibold group">
+          <div className="flex flex-wrap gap-4 mb-12 ">
+            {/* <Link to="/curriculum" className="flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded shadow-lg hover:shadow-xl hover:scale-105 transition-all font-semibold group">
               <span>Ver Plan de Estudios</span>
               <span className="material-icons group-hover:translate-x-1 transition-transform text-sm">arrow_forward</span>
-            </Link>
+            </Link> */}
             <Link to="/quality-conditions" className="flex items-center gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 rounded font-semibold transition-all dark:border-accent dark:text-accent dark:hover:bg-accent dark:hover:text-white">
               <span>Condiciones de Calidad</span>
             </Link>

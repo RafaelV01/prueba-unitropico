@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@layer utilities {
+    .hero-shape {
+        clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+    }
+
+    @media (max-width: 1024px) {
+        .hero-shape {
+            clip-path: none;
+        }
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B09A51;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #004D40;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
