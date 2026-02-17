@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           <div className="h-96 lg:h-auto lg:min-h-[calc(100vh-5rem)] w-full lg:w-[120%] relative hero-shape bg-gray-200 dark:bg-gray-800 overflow-hidden shadow-2xl">
             <img
               alt="Ingeniera con gafas de realidad aumentada"
-              className="absolute inset-0 w-full h-full object-cover object-right transform scale-105 hover:scale-110 transition-transform duration-[2s]"
+              className="absolute inset-0 w-full h-full object-cover object-right transform scale-105 hover:scale-110 transition-transform duration-[2s] pl-4"
               src="/img/lateral1.webp"
             />
             {/* Mobile Title Overlay */}
@@ -63,8 +63,8 @@ const Home: React.FC = () => {
               <span>Ver Plan de Estudios</span>
               <span className="material-icons group-hover:translate-x-1 transition-transform text-sm">arrow_forward</span>
             </Link>
-            <Link to="/contact" className="flex items-center gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 rounded font-semibold transition-all dark:border-accent dark:text-accent dark:hover:bg-accent dark:hover:text-white">
-              <span>Solicitar Información</span>
+            <Link to="/quality-conditions" className="flex items-center gap-2 border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 rounded font-semibold transition-all dark:border-accent dark:text-accent dark:hover:bg-accent dark:hover:text-white">
+              <span>Condiciones de Calidad</span>
             </Link>
           </div>
 
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
           </div>
 
           {/* Branding Logo Bottom Right */}
-          <div className="mt-12 lg:mt-auto lg:absolute lg:bottom-12 lg:right-12 flex flex-col items-end opacity-80 hover:opacity-100 transition-opacity">
+          <div className="mt-12 lg:mt-auto flex flex-col items-end opacity-80 hover:opacity-100 transition-opacity">
             <div className="flex items-center gap-3">
               <span className="material-icons text-5xl text-primary dark:text-teal-400">forest</span>
               <div className="flex flex-col">

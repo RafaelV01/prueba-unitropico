@@ -1,0 +1,110 @@
+.orbit-container {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.orbit-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pos-1 {
+    transform: translate(-50%, -50%) rotate(-90deg) translate(380px) rotate(90deg);
+}
+
+.pos-2 {
+    transform: translate(-50%, -50%) rotate(-50deg) translate(380px) rotate(50deg);
+}
+
+.pos-3 {
+    transform: translate(-50%, -50%) rotate(-10deg) translate(380px) rotate(10deg);
+}
+
+.pos-4 {
+    transform: translate(-50%, -50%) rotate(30deg) translate(380px) rotate(-30deg);
+}
+
+.pos-5 {
+    transform: translate(-50%, -50%) rotate(70deg) translate(380px) rotate(-70deg);
+}
+
+.pos-6 {
+    transform: translate(-50%, -50%) rotate(110deg) translate(380px) rotate(-110deg);
+}
+
+.pos-7 {
+    transform: translate(-50%, -50%) rotate(150deg) translate(380px) rotate(-150deg);
+}
+
+.pos-8 {
+    transform: translate(-50%, -50%) rotate(190deg) translate(380px) rotate(-190deg);
+}
+
+.pos-9 {
+    transform: translate(-50%, -50%) rotate(230deg) translate(380px) rotate(-230deg);
+}
+
+.orbit-item:hover {
+    z-index: 50;
+    scale: 1.15;
+}
+
+.core-shadow {
+    box-shadow: 0 10px 40px -10px rgba(0, 77, 64, 0.25), 0 0 20px rgba(191, 161, 95, 0.15);
+}
+
+.light-grid-bg {
+    background-color: #fcfcfc;
+    background-image:
+        linear-gradient(rgba(0, 77, 64, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 77, 64, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.elegant-shadow {
+    box-shadow: 0 4px 20px rgba(0, 77, 64, 0.08);
+}
+
+.gold-gradient-text {
+    background: linear-gradient(135deg, #004d40 0%, #00695c 50%, #bfa15f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.group:hover .center-preview {
+    opacity: 1;
+}
+
+@keyframes spin-slow {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    from {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 80s linear infinite;
+}
+
+.animate-spin-reverse {
+    animation: spin-reverse 60s linear infinite;
+}

@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="text-xs opacity-80 text-center sm:text-right">
              <p>© {new Date().getFullYear()} Unitrópico. Todos los derechos reservados.</p>
-             <p className="mt-1 opacity-60">Desarrollado con React & Laravel API</p>
+             <p className="mt-1 opacity-60"> - </p>
           </div>
         </div>
       </footer>

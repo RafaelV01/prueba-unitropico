@@ -7,6 +7,8 @@ import Curriculum from './pages/Curriculum';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 import Enroll from './pages/Enroll';
+import QualityConditions from './pages/QualityConditions';
+import QualityConditionDetail from './pages/QualityConditionDetail';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -28,6 +30,8 @@ const App: React.FC = () => {
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/enroll" element={<Enroll />} />
+          <Route path="/quality-conditions" element={<QualityConditions />} />
+          <Route path="/quality-conditions/:id" element={<QualityConditionDetail />} />
         </Routes>
         <Footer />
       </div>
